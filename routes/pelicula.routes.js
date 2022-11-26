@@ -50,7 +50,7 @@ router.get('/:clasificacion_id/:titulo',(req,res)=>{
         'inner join pelicula_clasificacion '+
         'on pelicula_clasificacion.pelicula_pelicula_id =  pelicula.pelicula_id '+
         'where  pelicula_clasificacion.clasificacion_clasificacion_id = ? '+
-        'and pelicula.pelicula_id = ?',[req.params.clasificacion_id,req.params.titulo],(err,rows)=>{
+        'and pelicula.titulo = ?',[req.params.clasificacion_id,req.params.titulo],(err,rows)=>{
             if(err) return res.send(err);
             res.json(rows);
         });
