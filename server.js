@@ -7,11 +7,11 @@ const usuarioRouter = require('./routes/usuario.routes');
 const peliculaRouter = require('./routes/pelicula.routes');
 
 const dbOptions={
-    host:process.env.DB_HOST || 'localhost',
+    host:process.env.DB_HOST || 'us-cdbr-east-06.cleardb.net',
     port:process.env.DB_PORT || '3306',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASS || '',
-    database: process.env.DB_DATABASE || 'kubodb'
+    user: process.env.DB_USER || 'b633d922df50b3',
+    password: process.env.DB_PASS || '8c6d6941',
+    database: process.env.DB_DATABASE || 'heroku_5e5e20014cbe52f'
 }
 
 // Middleware
@@ -32,3 +32,4 @@ app.listen(4000,()=>{
 
 
 // Falta la paginacion.
+// mysql://b633d922df50b3:8c6d6941@us-cdbr-east-06.cleardb.net/heroku_5e5e20014cbe52f?reconnect=true
