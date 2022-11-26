@@ -7,11 +7,11 @@ const usuarioRouter = require('./routes/usuario.routes');
 const peliculaRouter = require('./routes/pelicula.routes');
 
 const dbOptions={
-    host:process.env.DB_HOST || 'us-cdbr-east-06.cleardb.net',
-    port:process.env.DB_PORT || '3306',
-    user: process.env.DB_USER || 'b633d922df50b3',
-    password: process.env.DB_PASS || '8c6d6941',
-    database: process.env.DB_DATABASE || 'heroku_5e5e20014cbe52f'
+    host:'us-cdbr-east-06.cleardb.net',
+    port:'3306',
+    user:  'b633d922df50b3',
+    password: '8c6d6941',
+    database: 'heroku_5e5e20014cbe52f'
 }
 
 // Middleware
